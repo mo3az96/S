@@ -154,7 +154,7 @@
         @include transition(all 0.3s ease-in-out);
 
         &.mo-add-to-cart {
-            width: 151px;
+            width: 131px;
 
             span {
                 margin: 0 3px;
@@ -165,7 +165,8 @@
             }
         }
 
-        &.mo-add-to-wish {
+        &.mo-add-to-wish,
+        &.mo-add-to-compare {
             width: 32px;
         }
 

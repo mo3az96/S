@@ -860,7 +860,7 @@ html[dir=ltr] .cat-menu-img {
   transition: all 0.3s ease-in-out;
 }
 .product .mo-add-to.mo-add-to-cart {
-  width: 151px;
+  width: 131px;
 }
 .product .mo-add-to.mo-add-to-cart span {
   margin: 0 3px;
@@ -868,7 +868,7 @@ html[dir=ltr] .cat-menu-img {
 .product .mo-add-to.mo-add-to-cart span.mo-text {
   font-size: 14px;
 }
-.product .mo-add-to.mo-add-to-wish {
+.product .mo-add-to.mo-add-to-wish, .product .mo-add-to.mo-add-to-compare {
   width: 32px;
 }
 .product .mo-add-to:hover {
