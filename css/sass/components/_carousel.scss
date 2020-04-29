@@ -1,5 +1,7 @@
 .owl-carousel {
     .owl-item {
+        overflow: hidden;
+
         img {
             width: auto;
         }

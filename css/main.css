@@ -497,6 +497,9 @@ html[dir=ltr] .cat-menu-img {
   display: none;
 }
 
+.owl-carousel .owl-item {
+  overflow: hidden;
+}
 .owl-carousel .owl-item img {
   width: auto;
 }
