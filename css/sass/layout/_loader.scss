@@ -1,0 +1,160 @@
+/*//////////////////////////////preloader//////////////////////////////*/
+.pre-loader {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 9999;
+    background-color: #f7f7fa;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    img {
+        width: 250px;
+        -webkit-filter: invert(33%) sepia(92%) saturate(1941%) hue-rotate(167deg) brightness(90%) contrast(86%);
+        filter: invert(33%) sepia(92%) saturate(1941%) hue-rotate(167deg) brightness(90%) contrast(86%);
+    }
+
+    .content {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    .progress-bar {
+        background-color: $blue;
+        border: none;
+        overflow: hidden;
+        width: 200px;
+        height: 2px;
+        -webkit-box-shadow: none;
+        box-shadow: none;
+        margin: 42px 0 0 0;
+
+        .Shape_1 {
+            background-color: $blue;
+            position: absolute;
+            left: 583px;
+            top: 459px;
+            width: 200px;
+            height: 2px;
+            z-index: 4;
+        }
+
+        span {
+            display: block;
+        }
+
+    }
+
+    .bar {
+        background-color: #ccc;
+        -webkit-box-shadow: none;
+        box-shadow: none;
+    }
+
+    .progress {
+        -webkit-animation: loader 8s ease infinite;
+        animation: loader 8s ease infinite;
+        background: $blue;
+        border: none;
+        padding: 0px;
+        width: 0;
+        height: 2px;
+    }
+
+    .progress-bar {
+        -webkit-transform: rotateY(0deg);
+        transform: rotateY(0deg);
+    }
+}
+
+
+@-webkit-keyframes loader {
+    0% {
+        width: 0;
+    }
+
+    20% {
+        width: 10%;
+    }
+
+    25% {
+        width: 24%;
+    }
+
+    43% {
+        width: 41%;
+    }
+
+    56% {
+        width: 50%;
+    }
+
+    66% {
+        width: 52%;
+    }
+
+    71% {
+        width: 60%;
+    }
+
+    75% {
+        width: 76%;
+    }
+
+    94% {
+        width: 86%;
+    }
+
+    100% {
+        width: 100%;
+    }
+}
+
+@keyframes loader {
+    0% {
+        width: 0;
+    }
+
+    20% {
+        width: 10%;
+    }
+
+    25% {
+        width: 24%;
+    }
+
+    43% {
+        width: 41%;
+    }
+
+    56% {
+        width: 50%;
+    }
+
+    66% {
+        width: 52%;
+    }
+
+    71% {
+        width: 60%;
+    }
+
+    75% {
+        width: 76%;
+    }
+
+    94% {
+        width: 86%;
+    }
+
+    100% {
+        width: 100%;
+    }
+}
+
+/*//////////////////////////////preloader//////////////////////////////*/

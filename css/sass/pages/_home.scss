@@ -1,0 +1,59 @@
+.mo-products {
+    background-color: #fff;
+    margin-top: 20px;
+    padding-top: 47px;
+    padding-bottom: 50px;
+
+    @include sm {
+        padding-bottom: 20px;
+    }
+}
+
+.banners-cont {
+    margin-top: 20px;
+}
+
+.head {
+    font-size: 24px;
+    color: $text;
+    font-family: med;
+    text-align: center;
+    margin-bottom: 27px;
+}
+
+.feats {
+    background-color: $blue;
+    margin-top: 20px;
+    padding: 38px 0;
+}
+
+.feat {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+
+    @include sm {
+        margin-bottom: 30px;
+    }
+}
+
+.feat-icon {
+    width: 85px;
+    height: 85px;
+    background-color: #fff;
+    font-size: 34px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    color: $blue;
+    margin-bottom: 20px;
+}
+
+.feat-name {
+    font-size: 16px;
+    font-family: med;
+    color: #fff;
+}

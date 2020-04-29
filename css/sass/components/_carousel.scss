@@ -1,0 +1,137 @@
+.owl-carousel {
+    .owl-item {
+        img {
+            width: auto;
+        }
+    }
+
+    .owl-dots {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-top: 40px;
+
+        .owl-dot {
+            background: rgba(0, 0, 0, 0.4);
+            outline: none;
+            border: none;
+            width: 15px;
+            height: 5px;
+            cursor: pointer;
+            border-radius: 2.5px;
+            margin: 0 2.5px;
+            -moz-transition: all 0.3s ease-in-out;
+            -o-transition: all 0.3s ease-in-out;
+            -webkit-transition: all 0.3s ease-in-out;
+            transition: all 0.3s ease-in-out;
+
+            &.active {
+                background: $blue;
+                pointer-events: none;
+            }
+
+            &:hover {
+                background: $blue;
+            }
+        }
+    }
+
+    .owl-nav {
+        width: 0;
+        height: 0;
+
+        @include xs {
+            display: none;
+        }
+
+        button[class^=owl-] {
+            position: absolute;
+            top: 170px;
+            outline: none;
+            border: none;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #b2b2b2;
+            font-size: 14px;
+            -moz-transition: all 0.3s ease-in-out;
+            -o-transition: all 0.3s ease-in-out;
+            -webkit-transition: all 0.3s ease-in-out;
+            transition: all 0.3s ease-in-out;
+
+            &.owl-next {
+                left: -40px;
+            }
+
+            &.owl-prev {
+                right: -40px;
+            }
+
+            &:hover {
+                color: $blue;
+            }
+        }
+    }
+}
+
+.cats {
+    .owl-dots {
+        display: none;
+
+        @include xs {
+            display: flex;
+        }
+    }
+
+    .owl-nav {
+        button[class^=owl-] {
+            top: 50%;
+            transform: translateY(-50%);
+        }
+    }
+}
+
+.main-slider {
+    position: relative;
+    margin-top: 10px;
+
+    .owl-dots {
+        position: absolute;
+        bottom: 40px;
+        left: 50%;
+        transform: translateX(-50%);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 0;
+
+        @include xs {
+            bottom: 10px;
+        }
+
+        .owl-dot {
+            background: rgba(0, 0, 0, 0.4);
+            outline: none;
+            border: none;
+            width: 15px;
+            height: 5px;
+            cursor: pointer;
+            border-radius: 2.5px;
+            margin: 0 2.5px;
+            -moz-transition: all 0.3s ease-in-out;
+            -o-transition: all 0.3s ease-in-out;
+            -webkit-transition: all 0.3s ease-in-out;
+            transition: all 0.3s ease-in-out;
+
+            &.active {
+                background: #fff;
+                pointer-events: none;
+            }
+
+            &:hover {
+                background: #fff;
+            }
+        }
+
+    }
+}

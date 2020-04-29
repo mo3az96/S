@@ -1,0 +1,35 @@
+.mo-navbar {
+    display: flex;
+    align-items: center;
+
+    >li {
+        line-height: 53px;
+
+        &.nav-li {
+            margin: 0 7px;
+
+            @include lg {
+                margin: 0 12px;
+            }
+        }
+
+        &.xs-li {
+            display: none;
+        }
+    }
+
+}
+
+
+
+.nav-anchor {
+    font-size: 16px;
+    font-family: med;
+    color: #1a1a1a;
+    @include transition(all 0.3s ease-in-out);
+
+    &:hover,
+    &:focus {
+        color: $count;
+    }
+}

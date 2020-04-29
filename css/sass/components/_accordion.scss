@@ -1,0 +1,45 @@
+.mo-panel {
+    max-height: 0;
+    overflow: hidden;
+    transition: all 0.5s ease-out;
+    padding: 0 15px;
+}
+
+.mo-accordion {
+    cursor: pointer;
+    width: 100%;
+    transition: 0.4s;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    &.nav-foot-header {
+        margin-bottom: 0;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+
+    &:after {
+        content: "";
+        font-family: "Font Awesome 5 Free";
+        font-weight: 900;
+        font-size: 13px;
+        transition: all 0.5s ease-out;
+    }
+
+    &.active {
+
+        &:after {
+            transform: rotate(180deg);
+        }
+    }
+}
+
+@include xs {
+    .nav-foot-cont {
+        margin-bottom: 5px;
+        padding: 10px 15px;
+    }
+}

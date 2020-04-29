@@ -1,0 +1,31 @@
+body {
+    position: relative;
+    font-family: tajwal;
+    overflow: hidden;
+    background-color: #f7f7fa;
+
+    &::-webkit-scrollbar {
+        background-color: #fff;
+        width: 7px;
+        height: 0px;
+    }
+
+    &::-webkit-scrollbar-thumb {
+        background-color: #10758f;
+    }
+}
+
+html {
+    scrollbar-width: thin;
+    scrollbar-color: #10758f #fff;
+}
+
+.overflow {
+    overflow: hidden !important;
+}
+
+@media (min-width: 1600px) {
+    .container {
+        width: 1440px;
+    }
+}

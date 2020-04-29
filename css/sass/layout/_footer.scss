@@ -1,0 +1,135 @@
+footer {
+    background-color: #fff;
+    padding-top: 70px;
+    padding-bottom: 58px;
+
+    @include sm {
+        padding-top: 40px;
+        padding-bottom: 28px;
+    }
+}
+
+.about-sec {
+    .logo {
+        margin-bottom: 20px;
+
+        img {
+            -webkit-filter: invert(33%) sepia(92%) saturate(1941%) hue-rotate(167deg) brightness(90%) contrast(86%);
+            filter: invert(33%) sepia(92%) saturate(1941%) hue-rotate(167deg) brightness(90%) contrast(86%);
+
+            @include md {
+                margin: auto;
+            }
+        }
+
+
+    }
+
+    @include md {
+        margin-bottom: 40px;
+        text-align: center;
+    }
+}
+
+.about-text {
+    font-size: 15px;
+    color: $text;
+    line-height: 1.867;
+}
+
+.foot-header {
+    font-size: 17px;
+    color: $text;
+    font-family: bold;
+    margin-bottom: 28px;
+
+    &.news-header {
+        @include sm {
+            text-align: center;
+        }
+    }
+}
+
+.nav-foot-li {
+    margin-bottom: 9px;
+
+    &:last-of-type {
+        margin-bottom: 0;
+    }
+}
+
+.nav-foot-link {
+    font-size: 15px;
+    color: $text;
+    @include transition(all 0.3s ease-in-out);
+    display: inline-flex;
+
+    &:hover,
+    &:focus {
+        transform: translateX(-5px);
+        color: $footer;
+    }
+}
+
+.news-letter {
+    @include sm {
+        margin-top: 40px;
+    }
+}
+
+.social {
+    margin-top: 21px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.social-link {
+    border-radius: 50%;
+    background-color: #b3b3b3;
+    margin: 0 2.5px;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 16px;
+    color: #fff;
+    @include transition(all 0.3s ease-in-out);
+
+    &:hover {
+        background-color: $social;
+        color: #fff;
+    }
+}
+
+.last-footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    margin-top: 53px;
+
+    @include sm {
+        margin-top: 40px;
+    }
+}
+
+.copy-right {
+    font-size: 14px;
+    color: $text;
+    margin-bottom: 28px;
+
+    @include sm {
+        order: 2;
+        margin: 0;
+        margin-top: 28px;
+    }
+}
+
+.payment {
+    @include sm {
+        order: 1;
+    }
+}

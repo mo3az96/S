@@ -1,0 +1,85 @@
+.banners {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    @include sm {
+        flex-direction: column;
+    }
+}
+
+.banner {
+    position: relative;
+    width: calc(50% - 10.5px);
+    margin-left: 21px;
+    display: block;
+    overflow: hidden;
+
+    #{$ltr} & {
+        margin-left: 0;
+        margin-right: 21px;
+    }
+
+    @include sm {
+        width: 100%;
+        margin: 0;
+        margin-bottom: 15px;
+
+        #{$ltr} & {
+            margin-left: 0;
+            margin-right: 0;
+        }
+    }
+
+    &:last-of-type {
+        margin-left: 0;
+
+        #{$ltr} & {
+            margin-left: 0;
+            margin-right: 0;
+        }
+
+        @include sm {
+            margin: 0;
+            margin-bottom: 0;
+
+            #{$ltr} & {
+                margin-left: 0;
+                margin-right: 0;
+            }
+        }
+    }
+
+    img {
+        width: 100%;
+        @include transition(all 0.3s ease-in-out);
+    }
+
+
+    &::before {
+        position: absolute;
+        top: 0;
+        left: -75%;
+        z-index: 2;
+        display: block;
+        content: '';
+        width: 50%;
+        height: 100%;
+        background: -webkit-gradient(linear, left top, right top, from(rgba(255, 255, 255, 0)), to(rgba(255, 255, 255, 0.3)));
+        background: linear-gradient(to right, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.3) 100%);
+        -webkit-transform: skewX(-25deg);
+        transform: skewX(-25deg);
+        cursor: pointer;
+    }
+
+    &:hover {
+        &::before {
+            -webkit-animation: shine 0.7s ease forwards;
+            animation: shine 0.7s ease forwards;
+        }
+
+        img {
+            transform: scale(1.1);
+        }
+    }
+}

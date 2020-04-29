@@ -1,0 +1,66 @@
+.cats {
+    margin-top: 20px;
+
+    .item {
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        padding-bottom: 100%;
+    }
+}
+
+.cat {
+    padding: 5px;
+    background-color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    @include transition(all 0.3s ease-in-out);
+
+    &:hover {
+        background-color: $blue;
+
+        .cat-img {
+            img {
+                -webkit-filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(288deg) brightness(102%) contrast(102%);
+                filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(288deg) brightness(102%) contrast(102%);
+            }
+        }
+
+        .cat-name {
+            color: #fff;
+        }
+    }
+}
+
+.cat-img {
+    width: 64px;
+    height: 56px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+
+    img {
+        max-height: 100%;
+        max-width: 100%;
+        -webkit-filter: invert(15%) sepia(1%) saturate(3615%) hue-rotate(328deg) brightness(71%) contrast(101%);
+        filter: invert(15%) sepia(1%) saturate(3615%) hue-rotate(328deg) brightness(71%) contrast(101%);
+    }
+}
+
+.cat-name {
+    font-size: 18px;
+    color: $text;
+    height: 50px;
+    @include transition(all 0.3s ease-in-out);
+}
