@@ -83,7 +83,7 @@ html {
   overflow: hidden !important;
 }
 
-@media (min-width: 1600px) {
+@media (min-width: 1500px) {
   .container {
     width: 1440px;
   }
@@ -155,7 +155,7 @@ html {
   height: 48px;
   width: 556px;
 }
-@media (min-width: 1600px) {
+@media (min-width: 1500px) {
   .search-cont {
     width: 750px;
   }
@@ -316,7 +316,7 @@ html[dir=ltr] .newsletter-button:after {
 .mo-navbar > li.nav-li {
   margin: 0 7px;
 }
-@media (min-width: 1600px) {
+@media (min-width: 1500px) {
   .mo-navbar > li.nav-li {
     margin: 0 12px;
   }
@@ -345,7 +345,7 @@ html[dir=ltr] .cats-menu {
   margin-left: 0;
   margin-right: 10px;
 }
-@media (min-width: 1600px) {
+@media (min-width: 1500px) {
   .cats-menu {
     margin-left: 20px;
   }
@@ -373,7 +373,7 @@ html[dir=ltr] .cats-btn {
   border-right: 1px solid #e2e5f1;
   border-left: none;
 }
-@media (min-width: 1600px) {
+@media (min-width: 1500px) {
   .cats-btn {
     width: 240px;
   }
@@ -421,7 +421,7 @@ html[dir=ltr] .cats-btn {
   padding-bottom: 15px;
   width: 20%;
 }
-@media (min-width: 1600px) {
+@media (min-width: 1500px) {
   .cat-li {
     padding: 14px;
     padding-top: 11px;
@@ -446,7 +446,7 @@ html[dir=ltr] .cat-menu-img {
   margin-right: 10px;
   margin-left: 0;
 }
-@media (min-width: 1600px) {
+@media (min-width: 1500px) {
   .cat-menu-img {
     margin-left: 17px;
   }
@@ -468,7 +468,7 @@ html[dir=ltr] .cat-menu-img {
   font-size: 15px;
   color: #1a1a1a;
 }
-@media (min-width: 1600px) {
+@media (min-width: 1500px) {
   .cat-anchor {
     font-size: 16px;
   }
@@ -975,6 +975,11 @@ html[dir=ltr] .banner:last-of-type {
   -webkit-filter: invert(33%) sepia(92%) saturate(1941%) hue-rotate(167deg) brightness(90%) contrast(86%);
   filter: invert(33%) sepia(92%) saturate(1941%) hue-rotate(167deg) brightness(90%) contrast(86%);
 }
+@media (max-width: 767px) {
+  .pre-loader img {
+    width: 150px;
+  }
+}
 .pre-loader .content {
   display: flex;
   align-items: center;
@@ -1423,10 +1428,12 @@ nav {
   }
 }
 .call span {
-  margin: 0 8px;
-}
-html[dir=ltr] .call span {
   margin: 0 5px;
+}
+@media (min-width: 1500px) {
+  .call span {
+    margin: 0 8px;
+  }
 }
 .call a {
   font-family: bold;
@@ -1538,12 +1545,29 @@ footer {
   color: #1a1a1a;
   line-height: 1.867;
 }
+html[dir=ltr] .about-text {
+  font-size: 14px;
+}
+@media (max-width: 991px) {
+  html[dir=ltr] .about-text {
+    font-size: 15px;
+  }
+}
 
 .foot-header {
   font-size: 17px;
   color: #1a1a1a;
   font-family: bold;
   margin-bottom: 28px;
+}
+html[dir=ltr] .foot-header {
+  font-size: 16px;
+  white-space: nowrap;
+}
+@media (max-width: 991px) {
+  html[dir=ltr] .foot-header {
+    font-size: 15px;
+  }
 }
 @media (max-width: 991px) {
   .foot-header.news-header {
@@ -1567,9 +1591,20 @@ footer {
   transition: all 0.3s ease-in-out;
   display: inline-flex;
 }
+html[dir=ltr] .nav-foot-link {
+  font-size: 14px;
+}
+@media (max-width: 991px) {
+  html[dir=ltr] .nav-foot-link {
+    font-size: 15px;
+  }
+}
 .nav-foot-link:hover, .nav-foot-link:focus {
   transform: translateX(-5px);
   color: #ea8f3c;
+}
+html[dir=ltr] .nav-foot-link:hover, html[dir=ltr] .nav-foot-link:focus {
+  transform: translateX(5px);
 }
 
 @media (max-width: 991px) {
@@ -1647,6 +1682,10 @@ nav .close-btn {
   font-size: 20px;
   color: #ccc;
   transform: translateX(-50%);
+}
+html[dir=ltr] nav .close-btn {
+  right: 25px;
+  left: auto;
 }
 @media (max-width: 991px) {
   nav {

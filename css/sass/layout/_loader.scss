@@ -15,6 +15,10 @@
         width: 250px;
         -webkit-filter: invert(33%) sepia(92%) saturate(1941%) hue-rotate(167deg) brightness(90%) contrast(86%);
         filter: invert(33%) sepia(92%) saturate(1941%) hue-rotate(167deg) brightness(90%) contrast(86%);
+
+        @include xs {
+            width: 150px;
+        }
     }
 
     .content {

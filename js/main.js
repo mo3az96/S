@@ -34,7 +34,7 @@ $(document).ready(function () {
             1200: {
                 items: 7
             },
-            1600: {
+            1500: {
                 items: 8
             }
         }
@@ -63,7 +63,7 @@ $(document).ready(function () {
             1200: {
                 items: 5
             },
-            1600: {
+            1500: {
                 items: 6
             }
         }

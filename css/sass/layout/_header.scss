@@ -347,10 +347,10 @@ nav {
     }
 
     span {
-        margin: 0 8px;
+        margin: 0 5px;
 
-        #{$ltr} & {
-            margin: 0 5px;
+        @include lg {
+            margin: 0 8px;
         }
     }
 

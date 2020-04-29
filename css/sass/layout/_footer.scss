@@ -35,6 +35,14 @@ footer {
     font-size: 15px;
     color: $text;
     line-height: 1.867;
+
+    #{$ltr} & {
+        font-size: 14px;
+
+        @include sm {
+            font-size: 15px;
+        }
+    }
 }
 
 .foot-header {
@@ -42,6 +50,15 @@ footer {
     color: $text;
     font-family: bold;
     margin-bottom: 28px;
+
+    #{$ltr} & {
+        font-size: 16px;
+        white-space: nowrap;
+
+        @include sm {
+            font-size: 15px;
+        }
+    }
 
     &.news-header {
         @include sm {
@@ -64,10 +81,22 @@ footer {
     @include transition(all 0.3s ease-in-out);
     display: inline-flex;
 
+    #{$ltr} & {
+        font-size: 14px;
+
+        @include sm {
+            font-size: 15px;
+        }
+    }
+
     &:hover,
     &:focus {
         transform: translateX(-5px);
         color: $footer;
+
+        #{$ltr} & {
+            transform: translateX(5px);
+        }
     }
 }
 
