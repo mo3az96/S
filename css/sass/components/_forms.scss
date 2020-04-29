@@ -37,6 +37,7 @@
     position: relative;
     height: 48px;
     width: 556px;
+    @include transition(all 0.3s ease-in-out);
 
     @include lg {
         width: 750px;

@@ -154,6 +154,10 @@ html {
   position: relative;
   height: 48px;
   width: 556px;
+  -moz-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
 }
 @media (min-width: 1500px) {
   .search-cont {
@@ -563,6 +567,8 @@ html[dir=ltr] .cat-menu-img {
 @media (max-width: 767px) {
   .cats .owl-dots {
     display: flex;
+    margin-top: 20px;
+    margin-bottom: 20px;
   }
 }
 .cats .owl-nav button[class^=owl-] {
@@ -1100,6 +1106,11 @@ header {
 .top-bar-cont {
   background-color: #10758f;
 }
+@media (max-width: 767px) {
+  .top-bar-cont {
+    padding: 0 20px;
+  }
+}
 
 .top-bar {
   height: 40px;
@@ -1134,7 +1145,7 @@ header {
 @media (max-width: 767px) {
   .country {
     width: 100%;
-    justify-content: space-around;
+    justify-content: flex-end;
   }
 }
 
@@ -1262,6 +1273,10 @@ html[dir=ltr] .lang {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  -moz-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
 }
 @media (max-width: 991px) {
   .header {
@@ -1316,11 +1331,17 @@ html[dir=ltr] .lang {
 @media (max-width: 767px) {
   .user-anchor {
     font-size: 20px;
+    margin-left: 20px;
   }
 }
 html[dir=ltr] .user-anchor {
   margin-left: 0;
   margin-right: 23px;
+}
+@media (max-width: 767px) {
+  html[dir=ltr] .user-anchor {
+    margin-right: 20px;
+  }
 }
 .user-anchor.mo-menu-icon, .user-anchor.mo-search-icon {
   display: none;
@@ -1445,6 +1466,45 @@ nav {
 }
 .call a:hover, .call a:focus {
   color: #ea8f3c;
+}
+
+.fixed-header-cont {
+  height: 165px;
+}
+@media (max-width: 767px) {
+  .fixed-header-cont {
+    height: 67px;
+  }
+}
+.fixed-header-cont .fixed-header {
+  left: 0;
+  right: 0;
+  -moz-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+.fixed-header-cont .fixed-header.scroll {
+  position: fixed;
+  top: 0;
+  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.1);
+}
+.fixed-header-cont .fixed-header.scroll .header {
+  padding: 15px 0;
+}
+@media (max-width: 767px) {
+  .fixed-header-cont .fixed-header.scroll .header {
+    padding-top: 7px;
+    padding-bottom: 10px;
+  }
+}
+.fixed-header-cont .fixed-header.scroll .search-cont {
+  height: 45px;
+}
+@media (max-width: 767px) {
+  .fixed-header-cont .fixed-header.scroll .search-cont {
+    height: 48px;
+  }
 }
 
 .mo-products {

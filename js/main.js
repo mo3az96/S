@@ -6,6 +6,20 @@ $(window).on("load", function () {
     });
 });
 $(document).ready(function () {
+    $(window).scroll(function () {
+        if ($(this).scrollTop() >= 40) {
+            $(".fixed-header").addClass("scroll");
+        } else {
+            $(".fixed-header").removeClass("scroll");
+        }
+        if ($(window).width() <= 767) {
+            if ($(this).scrollTop() >= 30) {
+                $(".fixed-header").addClass("scroll");
+            } else {
+                $(".fixed-header").removeClass("scroll");
+            }
+        }
+    });
     /////////Main Slider/////////
     $('.main-slider').owlCarousel({
         items: 1,
