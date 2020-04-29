@@ -330,6 +330,10 @@ header {
     font-size: 12px;
     font-family: med;
     border-radius: 50%;
+
+    @include xs {
+        padding-top: 4px;
+    }
 }
 
 nav {

@@ -1424,6 +1424,11 @@ html[dir=ltr] .mo-cart-icon {
   font-family: med;
   border-radius: 50%;
 }
+@media (max-width: 767px) {
+  .count {
+    padding-top: 4px;
+  }
+}
 
 nav {
   border-bottom: 1px solid #e2e5f1;
