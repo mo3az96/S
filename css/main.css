@@ -63,6 +63,7 @@ body {
   font-family: tajwal;
   overflow: hidden;
   background-color: #f7f7fa;
+  text-transform: capitalize;
 }
 body::-webkit-scrollbar {
   background-color: #fff;
@@ -367,6 +368,10 @@ html[dir=ltr] .cats-menu {
   -o-transition: all 0.3s ease-in-out;
   -webkit-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
+}
+html[dir=ltr] .cats-btn {
+  border-right: 1px solid #e2e5f1;
+  border-left: none;
 }
 @media (min-width: 1600px) {
   .cats-btn {
@@ -1224,10 +1229,6 @@ html[dir=ltr] .lang {
     transform: translateX(50%);
   }
 }
-html[dir=ltr] .top-dropdown {
-  right: auto;
-  left: 0;
-}
 .top-dropdown .top-anchor {
   text-align: center;
   width: 100%;
@@ -1423,6 +1424,9 @@ nav {
 }
 .call span {
   margin: 0 8px;
+}
+html[dir=ltr] .call span {
+  margin: 0 5px;
 }
 .call a {
   font-family: bold;

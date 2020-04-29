@@ -140,10 +140,6 @@ header {
         transform: translateX(50%);
     }
 
-    #{$ltr} & {
-        right: auto;
-        left: 0;
-    }
 
     .top-anchor {
         text-align: center;
@@ -352,6 +348,10 @@ nav {
 
     span {
         margin: 0 8px;
+
+        #{$ltr} & {
+            margin: 0 5px;
+        }
     }
 
     a {

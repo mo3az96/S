@@ -27,6 +27,11 @@
     border-left: 1px solid #e2e5f1;
     @include transition(all 0.3s ease-in-out);
 
+    #{$ltr} & {
+        border-right: 1px solid #e2e5f1;
+        border-left: none;
+    }
+
     @include lg {
         width: 240px;
     }
